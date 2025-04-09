@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  @@include('html/head.html',{title:'Lorem'})
+  <body>
+    @@include('html/preloader.html',{})
+    <div class="wrapper">
+      @@include('html/burger-menu.html',{}) @@include('html/header.html',{})
+      <section class="section hero-section">
+        <h1 class="main-title">
+          <span>Lorem ipsum</span> dolor sit<br />
+          amet consectetur
+          <span>adipiscing</span>
+        </h1>
+        <div class="hero-section__discription">
+          <h3 class="hero-section__secondary-title">
+            At vero eos et accusamus et iusto odio dignissimos ducimus!
+          </h3>
+          <ul class="hero-section__discription-list">
+            <li class="hero-section__discription-item">
+              Totam rem aperiam eaque ipsa
+            </li>
+            <li class="hero-section__discription-item">
+              Sit voluptatem accusantium doloremque laudantium
+            </li>
+            <li class="hero-section__discription-item">
+              Sed ut perspiciatis, unde omnis iste natus error
+            </li>
+          </ul>
+        </div>
+        <div class="hero-section__button-wrapper">
+          <a
+            href="#ordering-section"
+            class="hero-section__button button primary"
+            >ЗАКАЗАТЬ</a
+          >
+          <a href="#" class="hero-section__button button secondary"
+            >ПОДРОБНЕЕ</a
+          >
+        </div>
+      </section>
+      <section class="section ordering-section" id="ordering-section">
+        <h2 class="section__title">ОФОРМЛЕНИЕ <span>ЗАКАЗА</span></h2>
+        <p class="paragraph">
+          Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        </p>
+
+        @@include('html/steps.html',{}) @@include('html/form.html',{})
+      </section>
+      @@include('html/footer.html',{})
+    </div>
+
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

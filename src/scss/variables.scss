@@ -1,0 +1,32 @@
+:root {
+  --primary: #3e9cdc;
+  --primary-hover: #2a8acd;
+  --primary-active: #17578d;
+  --primary-disabled: #e4effa;
+  --primary-dark: #286690;
+  --white: #ffffff;
+  --black: #000000;
+  --dark-gray: #272733;
+  --transition-time: 0.05s;
+  --transition-time-2: 1s;
+  --main-padding: 19.5%;
+}
+
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+$xxxl: 1750px;
+
+@media (max-width: $xxxl) {
+  :root {
+    --main-padding: 10%;
+  }
+}
+
+@media (max-width: $xxl) {
+  :root {
+    --main-padding: 5%;
+  }
+}
